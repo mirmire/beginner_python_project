@@ -42,7 +42,7 @@ def ask_play_again():
     elif play_again.startswith(('N', 'n')) or play_again == 'quit':
         exit()
     else:
-        print("Invalid input. Type 'yes', 'no' or quit to 'quit' the game.")
+        print("Invalid input. Type 'yes', 'no' or 'quit' to quit the game.")
         ask_play_again()
 
 
