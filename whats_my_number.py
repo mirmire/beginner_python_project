@@ -13,8 +13,7 @@ def is_prime(num):
     for i in range(2, num):
         if num % i == 0:
             return False
-        else:
-            i += 1
+        i += 1
     return True
 
 
@@ -22,23 +21,20 @@ def is_odd(num):
     sli = str(num)[:2]
     if (int(sli[0]) + int(sli[1])) % 2 == 0:
         return False
-    else:
-        return True
+    return True
 
 
 def is_even(num):
     if int(str(num)[-2]) % 2 == 0:
         return True
-    else:
-        return False
+    return False
 
 
 def last_digit(num):
     # look at this for example :)
     if str(num)[-1] == str(len(str(num))):
         return True
-    else:
-        return False
+    return False
 
 
 # The number is between 1 and 1000
